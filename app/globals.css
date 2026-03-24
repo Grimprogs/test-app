@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+@layer base {
+  body {
+    @apply bg-[#f5f5f5] text-[#1a1a1a];
+  }
+}
+
+.brutalist-card {
+  @apply bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px];
+}
+
+.brutalist-button {
+  @apply bg-[#00FF00] border-2 border-black px-6 py-3 font-display font-bold uppercase tracking-wider shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.brutalist-input {
+  @apply w-full bg-white border-2 border-black p-3 focus:outline-none focus:ring-2 focus:ring-[#00FF00] transition-all;
+}
